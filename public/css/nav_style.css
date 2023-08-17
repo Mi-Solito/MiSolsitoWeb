@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,600&display=swap');
+
+*{
+    font-family: 'Poppins';
+    color: #ffff;
+}
+
+body{
+    background-color: #000;
+}
+
+.nav__link_cart{
+    display: none;
+}
+
+
+
+.btn__nav{
+    display: none;
+    
+}
+
+.btn__nav > div{
+    background-color: #393939;
+    height: 2.5px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+}
+
+.btn__nav:hover div:first-child{
+    transform: rotate(45deg);
+}
+
+.btn__nav:hover div:nth-child(2){
+    opacity: 0;
+}
+
+.btn__nav:hover div:last-child{
+    transform: rotate(-45deg);
+}
+
+
+.navbar, .btn{
+    background-color: #EECDD4;
+}
+
+@media (max-width:770px){
+
+    .btn__nav{
+        display: flex;
+        flex-direction: column;
+        width: 2.61em;
+        height: 3em;
+        border: 0;
+        background: transparent;
+        gap: .50rem;
+    }
+    .nav__link_cart_img{
+        display: none;
+    }
+
+    .nav__link_cart{
+        display: block;
+    }
+}
